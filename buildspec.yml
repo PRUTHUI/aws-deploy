@@ -26,6 +26,6 @@ phases:
       # Give your container name
       - DOCKER_CONTAINER_NAME=deployment_demo
       - printf '[{"name":"%s","imageUri":"%s"}]' $DOCKER_CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
-  artifacts:
-    files: 
-      - '**/*'
+artifacts:
+  files: 
+    - '**/*'
